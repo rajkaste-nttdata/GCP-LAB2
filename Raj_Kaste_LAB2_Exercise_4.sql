@@ -1,3 +1,11 @@
+/*
+For Creating a new table for Query result, add 
+CREATE or REPLACE TABLE `dataset.tableID` at the beginning of the query
+
+CREATE OR REPLACE TABLE `uc1_18.myTable1`
+(remaining query)
+*/
+
 with country_from as(
     SELECT country,ARRAY_AGG(STRUCT(
         operatingSystem ,browser,rank
