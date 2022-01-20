@@ -1,3 +1,8 @@
+--Exercise 8
+--Find the top 10 committers in 2016 on Github repositories that uses the Java language
+--Public Dataset: bigquery-public-data.github_repos
+--Tables involved: languages, sample_commits
+
 SELECT 
 sc.committer.name as name, count(sc.repo_name) as count
 FROM `bigquery-public-data.github_repos.languages`as l
