@@ -1,5 +1,5 @@
 --Exercise 5
---Find the top 10 users (the id) who answered the most questions.
+--Find the top 10 users (the id) who answered the most questions in 2010
 --Public Dataset: bigquery-public-data.stackoverflow
 --Table involved: posts_answers, users
 
