@@ -1,3 +1,8 @@
+--Exercise 1
+--Given the shared file top_4000_movies_data.csv in resources folder
+--1. Create a BigQuery table “Movie” (created via BigQuery UI)
+--2. Find the top 10 highest budget films, year by year, from 2016 to 2020
+
 with row_count as(
 select year,Movie_Title,Production_Budget,RANK() OVER(PARTITION BY year order by Production_Budget DESC) AS rank
 from
