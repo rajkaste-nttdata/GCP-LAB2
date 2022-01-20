@@ -1,3 +1,8 @@
+--Exercise 5
+--Find the top 10 users (the id) who answered the most questions.
+--Public Dataset: bigquery-public-data.stackoverflow
+--Table involved: posts_answers, users
+
 SELECT users.id AS id_user,
 COUNT(pa.owner_user_id) as count
 FROM `bigquery-public-data.stackoverflow.users` users
