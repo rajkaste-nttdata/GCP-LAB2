@@ -1,3 +1,8 @@
+--Exercise 6
+--Find the top 10 StackOverflow users (the id) by accepted responses on 2010 posts
+--Public Dataset: bigquery-public-data.stackoverflow
+--Table involved: stackoverflow_posts, posts_answers, users
+
 SELECT users.id AS id_user,
 COUNT(*) as count
 FROM `bigquery-public-data.stackoverflow.users` users
